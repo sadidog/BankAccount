@@ -10,14 +10,16 @@ namespace BankAccount
     {
         private string name;
         // method that sets the account name in the object
-        public void SetName(string accountName)
+        public string Name
         {
-            name = accountName;
+            get
+            {
+                return name;
+            }
+            set
+            {
+                name = value;
+            }
         }
-        public string GetName()
-        {
-            return name; 
-        }
-    } 
+    }
 }
-

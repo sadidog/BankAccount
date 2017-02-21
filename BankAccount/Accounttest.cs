@@ -14,15 +14,15 @@ namespace BankAccount
             Account myAccount = new Account();
 
             // display myAccount's inital name (there is not one yet) 
-            Console.WriteLine($"Inital name is: {myAccount.GetName()}");
+            Console.WriteLine($"Inital name is: {myAccount.Name}");
 
             // prompt for and read the name, then put the name in the Account object
             Console.Write("Enter the account name: ");
             string theName = Console.ReadLine();
-            myAccount.SetName(theName);
+            myAccount.Name = theName;
 
             // display the name stored inthe myAccount object
-            Console.WriteLine($"MyAccount's name is: {myAccount.GetName()}");
+            Console.WriteLine($"MyAccount's name is: {myAccount.Name}");
         }
     }
 }
