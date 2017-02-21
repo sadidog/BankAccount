@@ -10,6 +10,7 @@ namespace BankAccount
     {
         private string name;
         // method that sets the account name in the object
+        // a change
         public void SetName(string accountName)
         {
             name = accountName;
